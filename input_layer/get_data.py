@@ -7,6 +7,7 @@ class GetProjectData(object):
     source_types = {
         'azure_blob': AzureInput
     }
+
     def __init__(self):
         self.sources = None
         self.download = True
@@ -19,21 +20,25 @@ class GetProjectData(object):
         self._check_sources()
         self.download = download
         temp_list = self.sources[self.sources.SourceCategory == data_type]
-
+        return self._retrieve_sources(temp_list)
 
     def download_project_data(self):
         self.download = True
         self._check_sources()
+        self._retrieve_sources(self.sources, capture_outputs=False)
 
-    def _retrieve_sources(self, source_df):
+    def _retrieve_sources(self, source_df, capture_outputs=True):
         output_data = []
         for idx, row in source_df.iterrows():
             source = row['SourceType']
             row_dict = dict(row)
             source_to_load = source(download=self.download, **row_dict)
-            data = source_to_load.get_data()
-            output_data.append(data)
-
+            if capture_outputs:
+                data = source_to_load.get_data()
+                output_data.append(data)
+            else:
+                _ = source_to_load.get_data()
+        return output_data
 
     def _check_sources(self):
         if self.sources is None:
