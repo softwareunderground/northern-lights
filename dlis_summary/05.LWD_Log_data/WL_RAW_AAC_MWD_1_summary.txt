@@ -1,0 +1,422 @@
+------------
+Logical File
+------------
+Description : LogicalFile(31/5-7)
+Frames      : 5
+Channels    : 48
+
+Known objects
+--
+FILE-HEADER : 1
+ORIGIN      : 6
+PARAMETER   : 274
+AXIS        : 12
+CHANNEL     : 48
+TOOL        : 4
+PROCESS     : 1
+FRAME       : 5
+
+Unknown objects
+--
+440-CHANNEL-PARAMETER : 716
+
+------
+Origin
+------
+name   : WELL-31/5-7
+origin : 4
+copy   : 0
+
+Logical file ID          : 31/5-7
+File set name and number : 31/5-7 / 1
+File number and type     : 0 / CUSTOMER
+
+Field                   : Eos
+Well (id/name)          :  / 31/5-7
+Produced by (code/name) : 440 / Schlumberger
+Produced for            : Equinor
+Created                 : 2019-12-14 18:15:56
+
+Created by              : Techlog, (version: 2017.2 (rev: 234070))
+Other programs/services : WELL-31/5-7
+
+-----------
+File-header
+-----------
+name   : 1
+origin : 4
+copy   : 0
+
+Description             : 31/5-7
+Position in storage set : 1
+
+                    Name  ...                                                                                                   Value(s)
+0                   CBDR  ...                                                                                        [406.6000061035156]
+1                    RMS  ...                                                                                       [0.1899999976158142]
+2                    BHT  ...                                                                                                     [16.0]
+3                    TDD  ...                                                                                                    [944.0]
+4          PRODUCER-CODE  ...                                                                                                      [440]
+5                    BLI  ...                                                                                                    [936.0]
+6                    TLI  ...                                                                                        [411.6000061035156]
+7                   CBLO  ...                                                                                        [406.6000061035156]
+8                     CN  ...                                                                                                  [Equinor]
+9                    RMB  ...                                                                                      [0.22998520731925964]
+10                   EPD  ...                                                                                                      [0.0]
+11                  RMCS  ...                                                                                                  [-999.25]
+12                   TDL  ...                                                                                                    [944.0]
+13         PRODUCER-NAME  ...                                                                                             [Schlumberger]
+14                  CSIZ  ...                                                                                                     [30.0]
+15                  RMFS  ...                                                                                       [0.1899999976158142]
+16                   EKB  ...                                                                                                      [0.0]
+17                  DATE  ...                                                                                              [03-Dec-2019]
+18                  PDAT  ...                                                                                                      [MSL]
+19                   APD  ...                                                                                                     [31.0]
+20                   LMF  ...                                                                                                       [DF]
+21                   DCS  ...                                                                                              [04-Dec-2019]
+22                   LUL  ...                                                                                           [Service Office]
+23                   EDF  ...                                                                                                     [31.0]
+24                    BS  ...                                                                                                      [8.5]
+25                   RUN  ...                                                                                                    [Run 2]
+26                   DFT  ...                                                                                                 [Seawater]
+27                  CWEI  ...                                                                                                    [457.0]
+28                   DFD  ...                                                                                       [1.0299999713897705]
+29                   EGL  ...                                                                                                   [-307.0]
+30                  NATI  ...                                                                                                   [Norway]
+31                   MST  ...                                                                                       [23.899999618530273]
+32                  MCST  ...                                                                                                     [20.0]
+33                  DLAB  ...                                                                                              [04-Dec-2019]
+34                  MFST  ...                                                                                       [23.899999618530273]
+35                   MRT  ...                                                                                                     [16.0]
+36                    FN  ...                                                                                                      [Eos]
+37                   TCS  ...                                                                                                 [20:23:38]
+38                  LONG  ...                                                                                          [3° 26' 36.13" E]
+39                   LUN  ...                                                                                                     [A615]
+40                  TLAB  ...                                                                                                 [00:53:56]
+41                  LATI  ...                                                                                         [60° 34' 35.14" N]
+42           CALI_SEL_GR  ...                                                                                                     [GCSE]
+43                  GRDC  ...                                                                                      [0.38999998569488525]
+44          SPL_COAL_OPT  ...                                                                                                     [NONE]
+45                  STOH  ...                                                                                                 [SECTOR_0]
+46       NEU_PRESCOR_OPT  ...                                                                                            [ANNULUS_PRESS]
+47        ECO_EP_GEOMEVT  ...                                                                                [EcoScopeStabilizerChanged]
+48         TFF_STOP_TIME  ...                                                                                            [43804.3984375]
+49                  OACF  ...                                                                                                        [8]
+50        STICKR_RPM_SEL  ...                                                                                                      [RPM]
+51          GR_O2COR_OPT  ...                                                                                                      [YES]
+52              TSIZ_ARC  ...                                                                                        [6.900000095367432]
+53               RHOF_RM  ...                                                                                                      [1.0]
+54        SPL_CLAY_MODEL  ...                                                                                                [SUBARKOSE]
+55                  EHED  ...                                                                                                     [31.0]
+56                CLO_RM  ...                                                                                                     [-5.0]
+57                CHI_RM  ...                                                                                                     [10.0]
+58        TFF_START_TIME  ...                                                                                           [43798.87109375]
+59              ATMP_ARC  ...                                                                                             [ANNULUS_TEMP]
+60           SPEC_MG_OPT  ...                                                                                                       [NO]
+61          EQUIP_CONFIG  ...                                                                                                   [StabOD]
+62            CAP_BRD_ID  ...                                                                                                      [106]
+63                  MSWS  ...                                                                                       [152.39999389648438]
+64              TFF_NAME  ...           [C:\Schlumberger Horizon Data\19SCA0085_85PHF\Recorded Mode Data\Run 1\DV6MT\DVD1801TIME.BIN_DB]
+65           DESPIKE_OPT  ...                                                                                                      [Off]
+66         INVAS_COMPUTE  ...                                                                                                       [NO]
+67            CAP_DET_ID  ...                                                                                               [SSN722ANAI]
+68          CALI_SEL_SIG  ...                                                                                                     [GCSE]
+69         ALPHA_DEN_OPT  ...                                                                                                       [NO]
+70                  PRTD  ...                                                                                                     [P34B]
+71          SPL_NL_COEFF  ...                                                                                                      [147]
+72                  TSIZ  ...                                                                                                     [6.75]
+73       DATA_TRANS_MODE  ...                                                                                                       [RT]
+74            SPEC_K_OPT  ...                                                                                                      [YES]
+75          NEU_DCOR_OPT  ...                                                                                                  [AVERAGE]
+76       CALI_SEL_NGD_RT  ...                                                                                               [Ultrasonic]
+77         NEU_FTUBE_OPT  ...                                                                                                     [BOTH]
+78                 GR_CF  ...                                                                                                      [1.8]
+79          RHO_SEAWATER  ...                                                                                       [1.0221190452575684]
+80              RUN_TYPE  ...                                                                                                   [NORMAL]
+81             STAB_SIZE  ...                                                                                                     [8.25]
+82                  FWVN  ...                                                                                                      [5.3]
+83       UNIFORM_COMPUTE  ...                                                                                                       [NO]
+84              DTMUD_DH  ...                                                                                                    [190.0]
+85        SPL_SULFUR_MIN  ...                                                                                                   [PYRITE]
+86   MULTIEFFECT_COMPUTE  ...                                                                                                       [NO]
+87          SIG_PCOR_OPT  ...                                                                                                     [Best]
+88       NEU_TEMPCOR_OPT  ...                                                                                        [INTERPOLATED_TEMP]
+89                  EVRL  ...                                                                                                       [49]
+90                  IDQT  ...                                                                                                        [2]
+91                  ABNT  ...                                                                                             [NO_TX_FAILED]
+92             SEABDEPTH  ...                                                                                                    [307.0]
+93                  GRSH  ...                                                                                                   [1000.0]
+94             LOW_BLEND  ...                                                                                                      [1.0]
+95          SPEC_SIG_COR  ...                                                                                                      [Yes]
+96          SPL_FILT_LEN  ...                                                                                                        [5]
+97            HIGH_BLEND  ...                                                                                                      [2.0]
+98                 ERRCT  ...                                                                                                      [4.5]
+99            BH_COMPUTE  ...                                                                                                       [NO]
+100         CALI_SEL_NGD  ...                                                                                               [Ultrasonic]
+101         CALI_SEL_NEU  ...                                                                                                     [GCSE]
+102         MAG_INCL_RAB  ...                                                                                        [73.08200073242188]
+103       OVERIDE_MAGDEC  ...                                                                                                        [1]
+104                 TOTC  ...                                                                                       [0.5920000076293945]
+105                 LOCH  ...                                                                                           [51125.30078125]
+106                 GMLG  ...                                                                                        [1.001328945159912]
+107       DELT_USER_LOCG  ...                                                                                    [0.0018500000005587935]
+108       OVERIDE_MAGDIP  ...                                                                                                        [1]
+109            USER_MDIP  ...                                                                                        [73.08200073242188]
+110         OVERIDE_LOCG  ...                                                                                                        [1]
+111                  EAE  ...                                                                                    [0.0020000000949949026]
+112                  EDI  ...                                                                                                     [41.0]
+113                 MDCP  ...                                                                                       [0.9819999933242798]
+114          SAG_CORR_ON  ...                                                                                                        [0]
+115            USER_MDEC  ...                                                                                       [0.9819999933242798]
+116                 GMLH  ...                                                                                           [51185.33984375]
+117                 DIPR  ...                                                                                        [73.08200073242188]
+118            DELT_MDIP  ...                                                                                      [0.44999998807907104]
+119       DELT_USER_MDIP  ...                                                                                      [0.44999998807907104]
+120     GEOMAG_YEAR_INFO  ...                                                                                                     [2018]
+121         GEOMAG_MODEL  ...                                                                                                     [BGGM]
+122         OVERIDE_LOCB  ...                                                                                                        [1]
+123                 GMLD  ...                                                                                          [73.011962890625]
+124                 GMDC  ...                                                                                       [0.6212754845619202]
+125                 LOCG  ...                                                                                       [1.0014100074768066]
+126                 DATE  ...                                                                                              [03-Dec-2019]
+127         MAG_DECL_RAB  ...                                                                                       [0.9819999933242798]
+128          DMAG_CUTOFF  ...                                                                                                  [-999.25]
+129            DELT_LOCB  ...                                                                                                    [300.0]
+130            DELT_LOCG  ...                                                                                    [0.0024999999441206455]
+131       DELT_USER_LOCB  ...                                                                                                    [300.0]
+132           PENDINGDNI  ...                                                                                                        [0]
+133         DMAG_CORR_ON  ...                                                                                                        [0]
+134            TKO_MO_MH  ...                                                                                                        [2]
+135            STCSBO_MH  ...                                                                                                    [300.0]
+136            RTFILI_MH  ...                                                                                       [1.2192000150680542]
+137                 SCLP  ...                                                                                                    [189.0]
+138           ITT_OFFSET  ...                                                                                                      [0.0]
+139        TFF_STOP_TIME  ...                                                                                            [43803.7265625]
+140           STCNRGT_MH  ...                                                                                                        [1]
+141              SHUL_MH  ...                                                                                                    [260.0]
+142        FIN_DTCO_MODE  ...                                                                                           [Receiver Array]
+143            STCXFH_MH  ...                                                                                                  [13000.0]
+144              DDEL_ML  ...                                                                                                      [0.0]
+145              DECF_ML  ...                                                                                                      [4.0]
+146   EP_ROP_TO_TOOL_BTM  ...                                                                                        [6.989999771118164]
+147              COUL_MH  ...                                                                                                    [240.0]
+148       TFF_START_TIME  ...                                                                                            [43798.8671875]
+149              DECF_MH  ...                                                                                                      [2.0]
+150               AVG_DT  ...                                                                                                      [0.0]
+151            STCPRM_MH  ...                                                                                           [Receiver Array]
+152            LRMODE_MH  ...                                                                                                  [P and S]
+153              SHLL_MH  ...                                                                                                     [70.0]
+154             TFF_NAME  ...  [C:\Schlumberger Horizon Data\19SCA0085_85PHF\Recorded Mode Data\Run 1\SONICSCOPE6\MP38019DUMP_12.BIN_DB]
+155           STCRSEL_MH  ...                                                                      [On;On;On;On;On;On;On;On;On;On;On;On]
+156             STCXC_MH  ...                                                                                                     [0.35]
+157              DDEL_QP  ...                                                                                                      [0.0]
+158       EP_TOOL_LENGTH  ...                                                                                        [9.979999542236328]
+159             RTFIL_MH  ...                                                                                                     [None]
+160           STCFOPT_MH  ...                                                                                             [User defined]
+161            STCTLL_MH  ...                                                                                                    [260.0]
+162            STCTWD_MH  ...                                                                                                     [80.0]
+163            STCSBW_MH  ...                                                                                                   [2000.0]
+164               DWC_ML  ...                                                                                                      [256]
+165            STCTWS_MH  ...                                                                                                     [80.0]
+166            STCTST_MH  ...                                                                                                     [80.0]
+167              NRSA_MH  ...                                                                                                       [12]
+168            STPPUL_MH  ...                                                                                                    [240.0]
+169              DSIN_QP  ...                                                                                                     [40.0]
+170              COLL_MH  ...                                                                                                     [40.0]
+171            TKOCTL_MH  ...                                                                                                       [On]
+172        STAB_FILECODE  ...                                                                                                  [MP6S083]
+173         STCPRM_MH_RA  ...                                                                                                       [On]
+174          QPI_CHSH_LL  ...                                                                                                      [0.6]
+175            STCSUL_MH  ...                                                                                                    [240.0]
+176                 MPOB  ...                                                                                       [28.121450424194336]
+177           STCNINT_MH  ...                                                                                                       [12]
+178              DECF_QP  ...                                                                                                      [4.0]
+179            STCSWD_MH  ...                                                                                                      [3.0]
+180           TKO_TOL_MH  ...                                                                                                     [50.0]
+181          FIN_DTS_SRC  ...                                                                                                      [QPI]
+182               DWC_MH  ...                                                                                                      [256]
+183          WFA_OUT_OPT  ...                                                                                                    [Depth]
+184              DSIN_ML  ...                                                                                                     [40.0]
+185         TKO_MAXFR_MH  ...                                                                                                  [12000.0]
+186               USR_HD  ...                                                                                                     [36.0]
+187              DSIN_MH  ...                                                                                                     [20.0]
+188            STCTWI_MH  ...                                                                                                    [240.0]
+189        FIN_DTLP_MODE  ...                                                                                                      [Off]
+190            STCXFL_MH  ...                                                                                                   [9000.0]
+191              DDEL_MH  ...                                                                                                      [0.0]
+192               DWC_QP  ...                                                                                                      [256]
+193               HD_SEL  ...                                                                                                       [BS]
+194             STCAL_MH  ...                                                                                                [FullArray]
+195            STCTUL_MH  ...                                                                                                   [2200.0]
+196         AVG_DT_DEPTH  ...                                                                                                      [0.0]
+197            STCSLL_MH  ...                                                                                                     [40.0]
+198             STCFL_MH  ...                                                                                                       [25]
+199         TKO_MINFR_MH  ...                                                                                                      [0.0]
+200         STCPRM_MH_TA  ...                                                                                                      [Off]
+201        FIN_DTSM_MODE  ...                                                                                           [Receiver Array]
+202           WF_OUT_OPT  ...                                                                                                     [None]
+203          DTCO_MH_SEL  ...                                                                                        [Computed Downhole]
+204            TKO_MO_MH  ...                                                                                                        [2]
+205            STCSBO_MH  ...                                                                                                    [300.0]
+206            RTFILI_MH  ...                                                                                       [1.2192000150680542]
+207                 SCLP  ...                                                                                                    [189.0]
+208           ITT_OFFSET  ...                                                                                                      [0.0]
+209        TFF_STOP_TIME  ...                                                                                            [43803.7265625]
+210           STCNRGT_MH  ...                                                                                                        [1]
+211              SHUL_MH  ...                                                                                                    [260.0]
+212        FIN_DTCO_MODE  ...                                                                                           [Receiver Array]
+213            STCXFH_MH  ...                                                                                                  [13000.0]
+214              DDEL_ML  ...                                                                                                      [0.0]
+215              DECF_ML  ...                                                                                                      [4.0]
+216   EP_ROP_TO_TOOL_BTM  ...                                                                                        [6.989999771118164]
+217              COUL_MH  ...                                                                                                    [240.0]
+218       TFF_START_TIME  ...                                                                                            [43798.8671875]
+219              DECF_MH  ...                                                                                                      [2.0]
+220               AVG_DT  ...                                                                                                      [0.0]
+221            STCPRM_MH  ...                                                                                           [Receiver Array]
+222            LRMODE_MH  ...                                                                                                  [P and S]
+223              SHLL_MH  ...                                                                                                     [70.0]
+224             TFF_NAME  ...  [C:\Schlumberger Horizon Data\19SCA0085_85PHF\Recorded Mode Data\Run 1\SONICSCOPE6\MP38019DUMP_12.BIN_DB]
+225           STCRSEL_MH  ...                                                                      [On;On;On;On;On;On;On;On;On;On;On;On]
+226             STCXC_MH  ...                                                                                                     [0.35]
+227              DDEL_QP  ...                                                                                                      [0.0]
+228       EP_TOOL_LENGTH  ...                                                                                        [9.979999542236328]
+229             RTFIL_MH  ...                                                                                                     [None]
+230           STCFOPT_MH  ...                                                                                             [User defined]
+231            STCTLL_MH  ...                                                                                                    [260.0]
+232            STCTWD_MH  ...                                                                                                     [80.0]
+233            STCSBW_MH  ...                                                                                                   [2000.0]
+234               DWC_ML  ...                                                                                                      [256]
+235            STCTWS_MH  ...                                                                                                     [80.0]
+236            STCTST_MH  ...                                                                                                     [80.0]
+237              NRSA_MH  ...                                                                                                       [12]
+238            STPPUL_MH  ...                                                                                                    [240.0]
+239              DSIN_QP  ...                                                                                                     [40.0]
+240              COLL_MH  ...                                                                                                     [40.0]
+241            TKOCTL_MH  ...                                                                                                       [On]
+242        STAB_FILECODE  ...                                                                                                  [MP6S083]
+243         STCPRM_MH_RA  ...                                                                                                       [On]
+244          QPI_CHSH_LL  ...                                                                                                      [0.6]
+245            STCSUL_MH  ...                                                                                                    [240.0]
+246                 MPOB  ...                                                                                       [28.121450424194336]
+247           STCNINT_MH  ...                                                                                                       [12]
+248              DECF_QP  ...                                                                                                      [4.0]
+249            STCSWD_MH  ...                                                                                                      [3.0]
+250           TKO_TOL_MH  ...                                                                                                     [50.0]
+251          FIN_DTS_SRC  ...                                                                                                      [QPI]
+252               DWC_MH  ...                                                                                                      [256]
+253          WFA_OUT_OPT  ...                                                                                                    [Depth]
+254              DSIN_ML  ...                                                                                                     [40.0]
+255         TKO_MAXFR_MH  ...                                                                                                  [12000.0]
+256               USR_HD  ...                                                                                                     [36.0]
+257              DSIN_MH  ...                                                                                                     [20.0]
+258            STCTWI_MH  ...                                                                                                    [240.0]
+259        FIN_DTLP_MODE  ...                                                                                                      [Off]
+260            STCXFL_MH  ...                                                                                                   [9000.0]
+261              DDEL_MH  ...                                                                                                      [0.0]
+262               DWC_QP  ...                                                                                                      [256]
+263               HD_SEL  ...                                                                                                       [BS]
+264             STCAL_MH  ...                                                                                                [FullArray]
+265            STCTUL_MH  ...                                                                                                   [2200.0]
+266         AVG_DT_DEPTH  ...                                                                                                      [0.0]
+267            STCSLL_MH  ...                                                                                                     [40.0]
+268             STCFL_MH  ...                                                                                                       [25]
+269         TKO_MINFR_MH  ...                                                                                                      [0.0]
+270         STCPRM_MH_TA  ...                                                                                                      [Off]
+271        FIN_DTSM_MODE  ...                                                                                           [Receiver Array]
+272           WF_OUT_OPT  ...                                                                                                     [None]
+273          DTCO_MH_SEL  ...                                                                                        [Computed Downhole]
+
+[274 rows x 3 columns]
+Frame ADDITIONAL_FINAL:
+Description      : 
+Indexed by       : BOREHOLE-DEPTH
+Interval         : [389.3819885253906, 916.076416015625] m
+Direction        : INCREASING
+Constant spacing : 0.15240000188350677 m
+Index channel    : Channel(TDEP)
+No. of channels  : 10
+
+Frame MH_LP_FINAL:
+Description      : 
+Indexed by       : BOREHOLE-DEPTH
+Interval         : [389.3819885253906, 916.076416015625] m
+Direction        : INCREASING
+Constant spacing : 0.15240000188350677 m
+Index channel    : Channel(TDEP)
+No. of channels  : 20
+
+Frame QP_INVS_FINAL:
+Description      : 
+Indexed by       : BOREHOLE-DEPTH
+Interval         : [389.3819885253906, 916.076416015625] m
+Direction        : INCREASING
+Constant spacing : 0.15240000188350677 m
+Index channel    : Channel(TDEP)
+No. of channels  : 12
+
+Frame WFS_FINAL:
+Description      : 
+Indexed by       : BOREHOLE-DEPTH
+Interval         : [389.3819885253906, 916.076416015625] m
+Direction        : INCREASING
+Constant spacing : 0.15240000188350677 m
+Index channel    : Channel(TDEP)
+No. of channels  : 3
+
+Frame WFT_FINAL:
+Description      : 
+Indexed by       : BOREHOLE-DEPTH
+Interval         : [389.3819885253906, 916.0255737304688] m
+Direction        : INCREASING
+Constant spacing : 0.05079999938607216 m
+Index channel    : Channel(TDEP)
+No. of channels  : 3
+              Name                                                      Long name     Units     Dimension                    Frame
+0             TDEP                                                                        m           [1]  Frame(ADDITIONAL_FINAL)
+1               BS                                                       Bit Size        in           [1]  Frame(ADDITIONAL_FINAL)
+2             DCAV        Density Caliper, Average - filtered if Orion compressed        in           [1]  Frame(ADDITIONAL_FINAL)
+3             DEVI                                                 Hole Deviation       deg           [1]  Frame(ADDITIONAL_FINAL)
+4       DTCO_FINAL                                         Compressional slowness     us/ft           [1]  Frame(ADDITIONAL_FINAL)
+5       DTSH_FINAL                                        Inverted shear slowness     us/ft           [1]  Frame(ADDITIONAL_FINAL)
+6             GRMA                                             Gamma Ray, Average      gAPI           [1]  Frame(ADDITIONAL_FINAL)
+7         PR_FINAL                                                Possion's Ratio  unitless           [1]  Frame(ADDITIONAL_FINAL)
+8             ROP5        Rate of penetration averaged over the last 5 ft (1.5 m)       m/h           [1]  Frame(ADDITIONAL_FINAL)
+9       VPVS_FINAL                                                     VpVs Ratio  unitless           [1]  Frame(ADDITIONAL_FINAL)
+10            TDEP                                                                        m           [1]       Frame(MH_LP_FINAL)
+11    CHCO_MH_LP_R                                        Compressional coherence  unitless           [1]       Frame(MH_LP_FINAL)
+12    CHCO_MH_LP_T                                        Compressional coherence  unitless           [1]       Frame(MH_LP_FINAL)
+13      DTCO_FINAL                                         Compressional slowness     us/ft           [1]       Frame(MH_LP_FINAL)
+14    DTCO_MH_LP_R                                         Compressional slowness     us/ft           [1]       Frame(MH_LP_FINAL)
+15    DTCO_MH_LP_T                                         Compressional slowness     us/ft           [1]       Frame(MH_LP_FINAL)
+16    PKCH_MH_LP_R                                                 Peak coherence  unitless          [16]       Frame(MH_LP_FINAL)
+17    PKCH_MH_LP_T                                                 Peak coherence  unitless          [16]       Frame(MH_LP_FINAL)
+18    PKNB_MH_LP_R                                       Number of detected peaks  unitless           [1]       Frame(MH_LP_FINAL)
+19    PKNB_MH_LP_T                                       Number of detected peaks  unitless           [1]       Frame(MH_LP_FINAL)
+20    PKSL_MH_LP_R                                                  Peak slowness     us/ft          [16]       Frame(MH_LP_FINAL)
+21    PKSL_MH_LP_T                                                  Peak slowness     us/ft          [16]       Frame(MH_LP_FINAL)
+22    PKTI_MH_LP_R                                               Peak travel time         s          [16]       Frame(MH_LP_FINAL)
+23    PKTI_MH_LP_T                                               Peak travel time         s          [16]       Frame(MH_LP_FINAL)
+24     SFA_MH_LP_R                                    Slowness frequency analysis  unitless         [151]       Frame(MH_LP_FINAL)
+25     SFA_MH_LP_T                                    Slowness frequency analysis  unitless         [151]       Frame(MH_LP_FINAL)
+26     SPR_MH_LP_R                                       Slowness time projection  unitless         [151]       Frame(MH_LP_FINAL)
+27     SPR_MH_LP_T                                       Slowness time projection  unitless         [151]       Frame(MH_LP_FINAL)
+28       SWF_MH_LP                                              Filtered waveform  unitless  [1, 12, 256]       Frame(MH_LP_FINAL)
+29   TICO_MH_LP_R6   Compressional integrated transit time for reference receiver        us           [1]       Frame(MH_LP_FINAL)
+30            TDEP                                                                        m           [1]     Frame(QP_INVS_FINAL)
+31      CHSH_QPINV                                       Inverted shear coherence  unitless           [1]     Frame(QP_INVS_FINAL)
+32     COHPR_QPINV                                           Coherence projection  unitless         [181]     Frame(QP_INVS_FINAL)
+33  DISP_QCI_QPINV          Difference ratio between inversion and TKO dispersion  unitless         [165]     Frame(QP_INVS_FINAL)
+34      DTSH_FINAL                                        Inverted shear slowness     us/ft           [1]     Frame(QP_INVS_FINAL)
+35      DTSH_QPINV                                        Inverted shear slowness     us/ft           [1]     Frame(QP_INVS_FINAL)
+36    FRQMAX_QPINV                                              Maximum frequency       kHz           [1]     Frame(QP_INVS_FINAL)
+37    FRQMIN_QPINV                                              Minimum frequency       kHz           [1]     Frame(QP_INVS_FINAL)
+38    SBSPEC_QPINV                                             Semblance spectrum  unitless         [165]     Frame(QP_INVS_FINAL)
+39       SFA_QPINV                                    Slowness frequency analysis  unitless         [100]     Frame(QP_INVS_FINAL)
+40       SWF_QPINV                                              Filtered waveform  unitless  [1, 12, 256]     Frame(QP_INVS_FINAL)
+41   TISH_QPINV_R6  Inverted shear integrated transit time for reference receiver        us           [1]     Frame(QP_INVS_FINAL)
+42            TDEP                                                                        m           [1]         Frame(WFS_FINAL)
+43         WFA_MHS                         Waveform Array - Monopole High, 6-inch            [1, 12, 256]         Frame(WFS_FINAL)
+44         WFA_QPS                            Waveform Array - Quadrupole, 6-inch            [1, 12, 256]         Frame(WFS_FINAL)
+45            TDEP                                                                        m           [1]         Frame(WFT_FINAL)
+46         WFA_MHT                         Waveform Array - Monopole High, 2-inch            [1, 12, 256]         Frame(WFT_FINAL)
+47         WFA_QPT                            Waveform Array - Quadrupole, 2-inch            [1, 12, 256]         Frame(WFT_FINAL)
