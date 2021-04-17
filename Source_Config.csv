@@ -1,0 +1,2 @@
+﻿SourceType,Endpoint,AdditionalConnectionInfo,SourceName,SourceCategory,Description
+azure_blob,https://datavillagesa.blob.core.windows.net/northernlights,sv=2018-03-28&sr=c&sig=ySdG6%2BRmccOC1Eg4H0UlVDyVQgAQ1QzQdxCh1dxcTXs%3D&se=2021-05-16T16%3A56%3A39Z&sp=rl,31_5-7 Eos/02.Drilling_and_Completion/CORING_2020-01-14_REPORT_1.PDF,Core Report,Operational discussion of the coring data collection during drilling

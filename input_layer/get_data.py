@@ -1,0 +1,42 @@
+import pandas as pd
+from .azure_input import AzureInput
+
+
+class GetProjectData(object):
+    config_path = './Source_Config.csv'
+    source_types = {
+        'azure_blob': AzureInput
+    }
+    def __init__(self):
+        self.sources = None
+        self.download = True
+
+    def list_available_sources(self):
+        self._check_sources()
+        return self.sources
+
+    def get_data_of_type(self, data_type, download=True):
+        self._check_sources()
+        self.download = download
+        temp_list = self.sources[self.sources.SourceCategory == data_type]
+
+
+    def download_project_data(self):
+        self.download = True
+        self._check_sources()
+
+    def _retrieve_sources(self, source_df):
+        output_data = []
+        for idx, row in source_df.iterrows():
+            source = row['SourceType']
+            row_dict = dict(row)
+            source_to_load = source(download=self.download, **row_dict)
+            data = source_to_load.get_data()
+            output_data.append(data)
+
+
+    def _check_sources(self):
+        if self.sources is None:
+            self.sources = pd.read_csv(self.config_path)
+
+
