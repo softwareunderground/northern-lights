@@ -1,0 +1,15 @@
+import pandas as pd
+def LoadFormationTops(loc1,loc2):
+    
+    '''Loader and csv converter for Northern Lights well 31/5- 7
+    loc1= Folder location for the original data
+    loc2= Folder location for the new output'''
+    
+    df = pd.read_excel(loc1+'/31_5-7_Formation_Tops_FWR_Sept2020.xlsx',
+                       skiprows=2,header=1,usecols=[1,2,3,4,5,6,7])
+    df['System'] = df['System'].fillna(method='ffill')
+    df['Group'] = df['Group'].fillna(method='ffill')
+    
+    df.to_csv(loc2+'/31_5-7_Formation_Tops_FWR_Sept2020.csv')
+    
+    return df
