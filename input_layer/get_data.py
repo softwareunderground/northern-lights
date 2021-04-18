@@ -1,5 +1,6 @@
 import pandas as pd
-from .azure_input import AzureInput
+from .azure_input import AzureInput, ContainerClient
+from collections import defaultdict
 
 
 class GetProjectData(object):
@@ -12,10 +13,18 @@ class GetProjectData(object):
     def __init__(self):
         self.sources = None
         self.download = True
+        self.repo_names = self._get_repo_names()
 
     def list_available_sources(self):
         self._check_sources()
         return self.sources
+
+    def get_data_with_name(self, name, download=False):
+        self._check_sources()
+        self.download = download
+        psuedo_source = self.sources.iloc[[0]].copy()
+        psuedo_source['SourceName'] = name
+        return self._retrieve_sources(psuedo_source)
 
     def get_data_of_type(self, data_type, download=True):
         self._check_sources()
@@ -46,4 +55,13 @@ class GetProjectData(object):
         if self.sources is None:
             self.sources = pd.read_csv(self.config_path)
 
+    def _get_repo_names(self):
+        url_postfix = 'sv=2018-03-28&sr=c&sig=ySdG6%2BRmccOC1Eg4H0UlVDyVQgAQ1QzQdxCh1dxcTXs%3D&se=2021-05-16T16%3A56%3A39Z&sp=rl'
+        url = 'https://datavillagesa.blob.core.windows.net/northernlights?'
+        nl_container = ContainerClient.from_container_url(container_url=url + url_postfix)
+        blob_list = nl_container.list_blobs()
+        output = defaultdict(list)
+        for blob in blob_list:
+            output['SourceName'].append(blob.name)
+        return pd.DataFrame(output)
 
