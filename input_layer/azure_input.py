@@ -1,6 +1,6 @@
 from .input_base import InputData
 from azure.storage.blob import ContainerClient, BlobClient
-from io import BytesIO
+from io import BytesIO, StringIO
 from .choose_file_handler import ChooseFileHandler
 
 

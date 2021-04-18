@@ -25,3 +25,27 @@ class TestAzureInput(TestCase):
         data = source.get_data()
         if data is None:
             raise Exception('No data loaded')
+
+    def test_get_asc_data_via_bytes(self):
+        source = AzureInput(
+            SourceCategory='Directional Survey',
+            SourceName='31_5-7 Eos/03.Directional_Surveys/WELLPATH_COMPUTED_1.ASC',
+            Endpoint='https://datavillagesa.blob.core.windows.net/northernlights',
+            AdditionalConnectionInfo='sv=2018-03-28&sr=c&sig=ySdG6%2BRmccOC1Eg4H0UlVDyVQgAQ1QzQdxCh1dxcTXs%3D&se=2021-05-16T16%3A56%3A39Z&sp=rl',
+            download=False
+        )
+        data = source.get_data()
+        if data is None:
+            raise Exception('No data loaded')
+
+    def test_get_asc_data_via_bytes_dl(self):
+        source = AzureInput(
+            SourceCategory='Directional Survey',
+            SourceName='31_5-7 Eos/03.Directional_Surveys/WELLPATH_COMPUTED_1.ASC',
+            Endpoint='https://datavillagesa.blob.core.windows.net/northernlights',
+            AdditionalConnectionInfo='sv=2018-03-28&sr=c&sig=ySdG6%2BRmccOC1Eg4H0UlVDyVQgAQ1QzQdxCh1dxcTXs%3D&se=2021-05-16T16%3A56%3A39Z&sp=rl',
+            # download=False
+        )
+        data = source.get_data()
+        if data is None:
+            raise Exception('No data loaded')
