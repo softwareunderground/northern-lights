@@ -3,6 +3,7 @@ from .azure_input import AzureInput
 
 
 class GetProjectData(object):
+    """Class for easy access to the northern lights dataset"""
     config_path = './Source_Config.csv'
     source_types = {
         'azure_blob': AzureInput
@@ -30,9 +31,10 @@ class GetProjectData(object):
     def _retrieve_sources(self, source_df, capture_outputs=True):
         output_data = []
         for idx, row in source_df.iterrows():
-            source = row['SourceType']
+            source = self.source_types[row['SourceType']]
             row_dict = dict(row)
-            source_to_load = source(download=self.download, **row_dict)
+            row_dict['download'] = self.download
+            source_to_load = source(**row_dict)
             if capture_outputs:
                 data = source_to_load.get_data()
                 output_data.append(data)
