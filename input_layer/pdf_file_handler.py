@@ -15,7 +15,7 @@ class PdfFileHandler(FileHandler):
         output = {}
         for x in range(pdf_file.numPages):
             try:
-                page = pdf_file.getPage(x + 1)
+                page = pdf_file.getPage(x)
                 output[x] = page.extractText()
             except Exception as ex:
                 print(f'page {x+1} failed!')
