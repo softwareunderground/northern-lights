@@ -73,3 +73,16 @@ class TestAzureInput(TestCase):
         data = source.get_data()
         if data is None:
             raise Exception('No data loaded')
+
+    # def test_get_las_via_dl(self):
+    #     source = AzureInput(
+    #         SourceCategory='Directional Survey',
+    #         SourceName='31_5-7 Eos/13.Petrophysical_Data_Evaluations/CPI/WLC_PETRO_COMPUTED_OUTPUT_1.LAS',
+    #         Endpoint='https://datavillagesa.blob.core.windows.net/northernlights',
+    #         AdditionalConnectionInfo='sv=2018-03-28&sr=c&sig=ySdG6%2BRmccOC1Eg4H0UlVDyVQgAQ1QzQdxCh1dxcTXs%3D&se=2021-05-16T16%3A56%3A39Z&sp=rl',
+    #         # download=False
+    #     )
+    #     data = source.get_data()
+    #     if data is None:
+    #         raise Exception('No data loaded')
+
