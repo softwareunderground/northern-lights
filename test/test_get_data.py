@@ -8,5 +8,5 @@ class TestAzureInput(TestCase):
         print('here')
 
     def test_get_core_photo_metadata(self):
-        data = GetProjectData().get_data_with_name('31_5-7 Eos/11.Core_Data/Core_Photos/CORE_PHOTO_CT_M_INF_1.ASC')
+        data = GetProjectData().get_data_of_type('Core Photo Metadata')
         print('here')

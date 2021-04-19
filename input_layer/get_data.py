@@ -1,13 +1,16 @@
 import pandas as pd
 from .azure_input import AzureInput, ContainerClient
 from collections import defaultdict
-
+from validation_and_parsing.core_photo_metadata_parser import CorePhotoMetadataParser
 
 class GetProjectData(object):
     """Class for easy access to the northern lights dataset"""
     config_path = './Source_Config.csv'
     source_types = {
         'azure_blob': AzureInput
+    }
+    parsers = {
+        'photo_metadata': CorePhotoMetadataParser(),
     }
 
     def __init__(self):
@@ -41,11 +44,18 @@ class GetProjectData(object):
         output_data = []
         for idx, row in source_df.iterrows():
             source = self.source_types[row['SourceType']]
+            parser = row['Parser']
             row_dict = dict(row)
             row_dict['download'] = self.download
             source_to_load = source(**row_dict)
             if capture_outputs:
                 data = source_to_load.get_data()
+                if parser is not None:
+                    file_parser = self.parsers[parser]
+                    if row['ParseType'] == 'df':
+                        data = file_parser.parse_to_df(data)
+                    else:
+                        data = file_parser.parse_to_array(data)
                 output_data.append(data)
             else:
                 _ = source_to_load.get_data()
