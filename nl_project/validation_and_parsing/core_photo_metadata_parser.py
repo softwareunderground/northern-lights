@@ -1,9 +1,11 @@
 from .parser import Parser, pd
 from collections import defaultdict
+import numpy as np
 
 
 class CorePhotoMetadataParser(Parser):
     prepend_to_filename = '31_5-7 Eos/11.Core_Data/Core_Photos/'
+
     def parse_to_df(self, input_dict: dict) -> pd.DataFrame:
         """Want header info, file name references, and depths covered for each photo"""
         output_dict = defaultdict(list)
@@ -29,3 +31,6 @@ class CorePhotoMetadataParser(Parser):
         for key, value in header_info.items():
             output[key] = value
         return output
+
+    def parse_to_array(self, input_dict: dict) -> np.ndarray:
+        raise ValueError('Core photo metadata does not parse to an array')
