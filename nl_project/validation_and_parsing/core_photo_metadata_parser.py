@@ -1,6 +1,7 @@
 from .parser import Parser, pd
 from collections import defaultdict
 
+
 class CorePhotoMetadataParser(Parser):
     prepend_to_filename = '31_5-7 Eos/11.Core_Data/Core_Photos/'
     def parse_to_df(self, input_dict: dict) -> pd.DataFrame:

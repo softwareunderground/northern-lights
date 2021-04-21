@@ -1,7 +1,7 @@
 import pandas as pd
 from .azure_input import AzureInput, ContainerClient
 from collections import defaultdict
-from validation_and_parsing.core_photo_metadata_parser import CorePhotoMetadataParser
+from nl_project.validation_and_parsing.core_photo_metadata_parser import CorePhotoMetadataParser
 
 class GetProjectData(object):
     """Class for easy access to the northern lights dataset"""

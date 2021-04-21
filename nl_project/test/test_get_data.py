@@ -1,5 +1,5 @@
 from unittest import TestCase
-from input_layer.get_data import GetProjectData
+from nl_project.input_layer.get_data import GetProjectData
 
 
 class TestAzureInput(TestCase):

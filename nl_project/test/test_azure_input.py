@@ -1,5 +1,5 @@
 from unittest import TestCase
-from input_layer.azure_input import AzureInput
+from nl_project.input_layer.azure_input import AzureInput
 
 
 class TestAzureInput(TestCase):

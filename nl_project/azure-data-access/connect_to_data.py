@@ -20,7 +20,7 @@ if __name__ == "__main__":
     for blob in blob_list:
         output['SourceName'].append(blob.name)
         blob_client = BlobClient.from_blob_url(blob_url=f"https://datavillagesa.blob.core.windows.net/northernlights/{blob.name}?{url_postfix}")
-        with open("./BlockDestination.txt", "wb") as my_blob:
+        with open("BlockDestination.txt", "wb") as my_blob:
             blob_data = blob_client.download_blob()
             blob_data.readinto(my_blob)
             print('here')
