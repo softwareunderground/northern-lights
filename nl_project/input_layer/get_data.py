@@ -51,10 +51,7 @@ class GetProjectData(object):
             if capture_outputs:
                 data = source_to_load.get_data()
                 if parser != 'None':
-                    try:
-                        file_parser = self.parsers[parser]
-                    except Exception as ex:
-                        print('here')
+                    file_parser = self.parsers[parser]
                     if row['ParseType'] == 'df':
                         data = file_parser.parse_to_df(data)
                     else:
