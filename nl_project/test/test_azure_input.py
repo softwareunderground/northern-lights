@@ -51,6 +51,7 @@ class TestAzureInput(TestCase):
             raise Exception('No data loaded')
 
     def test_get_tif_photo_data_via_dl(self):
+
         source = AzureInput(
             SourceCategory='Directional Survey',
             SourceName='31_5-7 Eos/11.Core_Data/Core_Photos/CORE_PHOTO_CT_M_TOP259200_1.TIF',
