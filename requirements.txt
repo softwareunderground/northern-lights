@@ -7,3 +7,4 @@ matplotlib
 pillow
 scikit-image
 pyPDF4
+parsimonious
