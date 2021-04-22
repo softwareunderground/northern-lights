@@ -22,6 +22,21 @@ class GetProjectData(object):
         self._check_sources()
         return self.sources
 
+    def report_on_azure_data(self):
+        self._check_sources()
+        file_extensions = []
+        categories = []
+        for idx, row in self.repo_names.iterrows():
+            source_name = row['SourceName']
+            file_ext = source_name.split('.')[-1].lower()
+            file_extensions.append(file_ext)
+            category = source_name.split('.')[1].split('/')[0]
+            categories.append(category)
+        report = self.repo_names
+        report['file_extensions'] = file_extensions
+        report['category'] = categories
+        return report
+
     def get_data_with_name(self, name, download=False):
         self._check_sources()
         self.download = download
@@ -73,5 +88,6 @@ class GetProjectData(object):
         output = defaultdict(list)
         for blob in blob_list:
             output['SourceName'].append(blob.name)
+            output['size'].append(blob.size)
+            output['content_type'].append(blob.content_settings['content_type'])
         return pd.DataFrame(output)
-

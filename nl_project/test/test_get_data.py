@@ -10,3 +10,7 @@ class TestAzureInput(TestCase):
     def test_get_core_photo_metadata(self):
         data = GetProjectData().get_data_of_type('Core Photo Metadata')
         print('here')
+
+    def test_get_repo_report(self):
+        proj_data_report = GetProjectData().report_on_azure_data()
+        print('here')
