@@ -10,6 +10,8 @@ from skimage.filters import sobel
 
 class CorePhotoInterface(WellInterface):
     """Interface to work with core photo data"""
+    lazy_load = True
+
     def __init__(self, name):
         super().__init__(name)
         self.core_photo_metadata = None
@@ -65,24 +67,32 @@ class CorePhotoInterface(WellInterface):
         photos_out['filtered_photos'] = filtered_photos
         return photos_out
 
-
     def _load_from_sources(self, key):
         # Load the core metadata table
         self.core_photo_metadata = GetProjectData().get_data_of_type('Core Photo Metadata')[0]
-        self._load_photos(self.core_photo_metadata)
+        if not self.lazy_load:
+            print('Warning, lazy loading disabled, loading full photo set')
+            self._load_photos(self.core_photo_metadata)
+        else:
+            print('Loading lazily, will only load requested photos')
         return self.loaded_photos
 
     def _load_photos(self, photo_info_df):
         for idx, row in photo_info_df.iterrows():
             if not self.data_exists(key=f'core_photo{idx}'):
-                print(f'Loading Photo at idx: {idx}')
-                current_photo = GetProjectData().get_data_with_name(name=row['file_key'], download=False)
-                self.set_data(key=f'core_photo{idx}', data=current_photo)
+                self._load_photo( idx, row)
             self.loaded_photos[idx] = f'core_photo{idx}'
+
+    def _load_photo(self, idx, row):
+        print(f'Loading Photo at idx: {idx}')
+        current_photo = GetProjectData().get_data_with_name(name=row['file_key'], download=False)
+        self.set_data(key=f'core_photo{idx}', data=current_photo)
 
     def _clean_up_photos(self, photos_df):
         output_photos = []
         for idx, row in photos_df.iterrows():
+            if not self.data_exists(key=f'core_photo{idx}'):
+                self._load_photo(idx, row)
             current_photo = self.get_data(key=f'core_photo{idx}', load=False)[0]['image_array']
             current_photo = current_photo[:, 75:, :]
 
