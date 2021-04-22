@@ -6,3 +6,4 @@ numpy
 matplotlib
 pillow
 scikit-image
+pyPDF4
