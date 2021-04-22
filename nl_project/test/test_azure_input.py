@@ -54,7 +54,7 @@ class TestAzureInput(TestCase):
 
         source = AzureInput(
             SourceCategory='Directional Survey',
-            SourceName='31_5-7 Eos/11.Core_Data/Core_Photos/CORE_PHOTO_CT_M_TOP259200_1.TIF',
+            SourceName='31_5-7 Eos/11.Core_Data/Core_Photos/CORE_PHOTO_CV_M_TOP264900_1_007W1.TIF',
             Endpoint='https://datavillagesa.blob.core.windows.net/northernlights',
             AdditionalConnectionInfo='sv=2018-03-28&sr=c&sig=ySdG6%2BRmccOC1Eg4H0UlVDyVQgAQ1QzQdxCh1dxcTXs%3D&se=2021-05-16T16%3A56%3A39Z&sp=rl',
             # download=False
