@@ -75,6 +75,29 @@ class TestAzureInput(TestCase):
         if data is None:
             raise Exception('No data loaded')
 
+    def test_get_segy_data_via_dl(self):
+        source = AzureInput(
+            SourceCategory='Borehole Siesmic Raw',
+            SourceName='31_5-7 Eos/07.Borehole_Seismic/VSPZO_RAW_2020-01-17_1.SEGY',
+            Endpoint='https://datavillagesa.blob.core.windows.net/northernlights',
+            AdditionalConnectionInfo='sv=2018-03-28&sr=c&sig=ySdG6%2BRmccOC1Eg4H0UlVDyVQgAQ1QzQdxCh1dxcTXs%3D&se=2021-05-16T16%3A56%3A39Z&sp=rl',
+            # download=False
+        )
+        data = source.get_data()
+        if data is None:
+            raise Exception('No data loaded')
+
+    def test_get_segy_data_via_bytes(self):
+        source = AzureInput(
+            SourceCategory='Borehole Siesmic Raw',
+            SourceName='31_5-7 Eos/07.Borehole_Seismic/VSPZO_RAW_2020-01-17_1.SEGY',
+            Endpoint='https://datavillagesa.blob.core.windows.net/northernlights',
+            AdditionalConnectionInfo='sv=2018-03-28&sr=c&sig=ySdG6%2BRmccOC1Eg4H0UlVDyVQgAQ1QzQdxCh1dxcTXs%3D&se=2021-05-16T16%3A56%3A39Z&sp=rl',
+            download=False
+        )
+        data = source.get_data()
+        if data is None:
+            raise Exception('No data loaded')
     # def test_get_las_via_dl(self):
     #     source = AzureInput(
     #         SourceCategory='Directional Survey',
