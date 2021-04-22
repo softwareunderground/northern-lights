@@ -1,0 +1,3 @@
+segyio
+lasio
+azure-storage-blob
