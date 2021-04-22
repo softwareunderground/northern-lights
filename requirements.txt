@@ -1,3 +1,8 @@
 segyio
 lasio
 azure-storage-blob
+pandas
+numpy
+matplotlib
+pillow
+scikit-image
