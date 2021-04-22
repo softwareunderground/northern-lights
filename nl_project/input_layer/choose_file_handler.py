@@ -3,6 +3,8 @@ from .asc_text_file_handler import AscFileHandler
 from .tif_handler import TifHandler
 # from .las_handler import LasHandler
 from .segy_handler import SegyHandler
+from .spwla_handler import SpwlaHandler
+
 
 class ChooseFileHandler(object):
     handlers = {'pdf': PdfFileHandler(),
@@ -11,6 +13,7 @@ class ChooseFileHandler(object):
                 'tiff': TifHandler(),
                 # 'las': LasHandler(),
                 'segy': SegyHandler(),
+                'spwla': SpwlaHandler(),
                 }
 
     def read_from_bytes(self, bytes, file_extension):
