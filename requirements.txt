@@ -1,5 +1,6 @@
 segyio
-lasio
+dlisio
+welly
 azure-storage-blob
 pandas
 numpy
